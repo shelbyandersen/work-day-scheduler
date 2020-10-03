@@ -12,7 +12,7 @@ var workDay = [
   "5PM",
 ];
 
-var currentDay = moment().format("LLL");
+var currentDay = moment().format("dddd, MMMM Do");
 console.log(currentDay);
 
 //JS VARIABLES
