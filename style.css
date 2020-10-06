@@ -4,6 +4,11 @@ body {
   line-height: 1;
 }
 
+p {
+  margin: 0;
+  padding: 0px;
+}
+
 textarea {
   background: transparent;
   border: none;
@@ -36,7 +41,6 @@ textarea {
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
   border-top: 1px solid white;
 }
 
@@ -68,6 +72,7 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  display: inline-block;
 }
 
 .saveBtn i:hover {
