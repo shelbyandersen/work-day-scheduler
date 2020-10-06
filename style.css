@@ -4,11 +4,6 @@ body {
   line-height: 1;
 }
 
-p {
-  margin: 0;
-  padding: 0px;
-}
-
 textarea {
   background: transparent;
   border: none;
@@ -78,4 +73,9 @@ textarea {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+.icon {
+  margin: 0;
+  padding: 0px;
 }
