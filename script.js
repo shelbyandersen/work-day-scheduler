@@ -22,7 +22,7 @@ console.log(currentDay);
 //Current day is displayed in heading (momentJS)
 $("#currentDay").append(currentDay);
 
-//Create time blocks for 9AM - 5PM
+//Create time blocks for 9AM - 5PM in JS
 
 //Grey - Time has passed, Red - Current hour, Green - Open
 
