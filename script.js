@@ -22,10 +22,10 @@ $(document).ready(function () {
     //Get current time
     var currentTime = moment().format("H");
 
-    // Elements with class "taskarea" - these are the time-blocks
+    // Elements with class form-control - these are the time-blocks
     var timeBlockElements = $(".form-control");
 
-    // Loop through the taskarea elements to check time
+    // Loop through the form-control elements to check the time
     for (var i = 0; i < timeBlockElements.length; i++) {
       //Get element i's ID as a string
       var elementID = timeBlockElements[i].id;
@@ -46,9 +46,34 @@ $(document).ready(function () {
       }
     }
   };
+  // User types in text field and clicks save (saved in local storage)
+
+  let storageArray = JSON.parse(localStorage.getItem("stored")) || [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+  ];
+  $(".saveBtn").on("click", function () {
+    let i = $(this).data("index");
+    var entertext = $(this).siblings(".form-control").val();
+    storageArray[i].value = entertext;
+    localStorage.setItem("stored", JSON.stringify(storageArray));
+    console.log(storageArray);
+    console.log(i);
+    console.log(this);
+  });
+
+  $(".form-control").each((i, el) => {
+    console.log(i, el);
+    $(el).val(storageArray[i].value);
+  });
 
   // Check the time every 5 minutes
   setInterval(checkTime(), 1000 * 60 * 5);
-
-  //Lock button saves the event (saved in local storage)
 });
