@@ -10,7 +10,7 @@ Green - Future hour
 
 This application is perfect for an office or company with a 9am - 5pm schedule.
 
-![Work Day Scheduler](./assets/workday-scheduler-app.png)
+![Work Day Scheduler](./Assets/workday-scheduler-app.png)
 
 Final Website Link: https://shelbyandersen.github.io/work-day-scheduler/
 
