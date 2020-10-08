@@ -1,55 +1,37 @@
-# Multiple Choice Code Quiz with Highscores
+# Work Day Scheduler
 
 ## Description
 
-This application features a welcome screen that asks the user to begin the quiz. When the user clicks "Start Quiz" the timer begins (75 seconds) and the first question appears on the screen. When the user selects their answer, it is validated and "right" or "wrong" appears on the screen. This continues until all the questions are answered. If the user gets a question wrong, 15 seconds are deducted from their time. The game is over either when the time runs out (gets to 0) or when the user finishes answering their question -- whatever comes first.
+This application allows a user to enter text in the time block elements and save their data. The time blocks are colored based on the time of day.
 
-When the game is over, a new section will appear on the page that asks the user to enter their initials and submit their score. The users score is the time remaining on the timer. When the user clicks submit, they are taken to the Highscore page where a list of highscores are displayed from largest to smallest. From here the user may clear the highscores, or they may begin the quiz again.
+Grey - Hour has passed
+Red - Current hour
+Green - Future hour
 
-![Code Quiz](./assets/homepage.png)
-![Code Quiz](./assets/enterscore.png)
-![Code Quiz](./assets/highscore.png)
+This application is perfect for an office or company with a 9am - 5pm schedule.
 
-Final Website Link: https://shelbyandersen.github.io/code-assessment/
+![Work Day Scheduler](./assets/workday-scheduler-app.png)
+
+Final Website Link: https://shelbyandersen.github.io/work-day-scheduler/
 
 ## Overview
 
----HOME PAGE
+When you open up the application you will see the current day displayed at the top of the page.
 
-Start Quiz - this button will begin the timed coding quiz. The total time is 75 seconds. If a user gets a question wrong, 15 seconds are deducted from the time.
-
-View Highscores - this button will take the user to the highscore page
-
-Timer - the timer says "0" on the homepage, but will begin once the quiz begins. The user has 75 seconds to complete the quiz.
-
----END QUIZ
-
-Enter Initials at Quiz End - the user will enter their initials at the end of the quiz. Their initials are saved along with their quiz score.
-
-Submit - When the user clicks "Submit" after entering their initials and ending the code quiz they are taken to the highscore page.
-
----HIGHSCORE PAGE
-
-Play Again - the code quiz will begin
-
-Clear Highscores - this will delete all of the highscores from the chart
-
-Highscores are in numerical order from highest to lowest. The user's score is equivalent to the time remaining on the timer.
+There are time blocks between the hours of 9am and 5pm. Each time block has a text area where you are able to type. There is a save button to the right of the time block. When the save button is clicked, the information is stored and will show if the page is refreshed.
 
 ## Installation
 
-The code for the Code Quiz can be found on github using the following link:
-https://github.com/shelbyandersen/code-assessment
+The code for the Work Day Scheduler can be found on github using the following link:
+https://github.com/shelbyandersen/work-day-scheduler
 
 ## Usage
 
-The Code Quiz Application has an index.html file, a highscores.js file, a style.css file, a script.js file, and a highscores.js file.
-
-DOM Manipulation was used to render most elements on the screen.
+The Workday Scheduler has an HTML, CSS, and JavaScript file. The code utilizes the moment.js library to display the current day, and to color code the hours based on the time of day. the jQuery library was also used for this application.
 
 Code will need to be taken from the repo on github and changes can be made:
 
-https://github.com/shelbyandersen/code-assessment
+https://github.com/shelbyandersen/work-day-scheduler
 
 ## Credits
 
